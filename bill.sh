@@ -6,7 +6,7 @@ then
     bill=$(echo "$n * 3" | bc)
 elif [ $n -le 250 ]
 then 
-    m=$(( $n - 200 ))
+    m=$(( $n - 50 ))
     bill=$(echo "50 * 3 + $m * 4.50" | bc)
 else
     m=$(( $n - 250 ))
